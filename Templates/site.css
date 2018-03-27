@@ -1,6 +1,24 @@
+/* TAGS */
+
 * {
 	box-sizing : border-box;
 }
+
+body {
+	margin : 5px;
+	padding-bottom : 15px;
+}
+
+footer {
+	border-top : 1px solid black;
+	position : fixed;
+	text-align : center;
+	bottom : 0;
+	left : 0;
+	right: 0;
+	width : 100%;
+}
+/* Classes */
 
 .oa_menu {
 	border : 1px solid black;
@@ -21,7 +39,7 @@
 	margin : 5px;
 	display : flex;
 	justify-content : space-around;
-	flex-flow : row wrap;
+	flex-flow : row no-wrap;
 	padding : 10px;
 	background-color : lightgray;
 }
@@ -32,4 +50,33 @@
 	width : 250px;
 	height : 150px;
 	background-color : white;
+}
+
+.search_wrapper{
+	border : 1px solid black;
+	height : 40px;
+	margin : 5px;
+	display : flex;
+	flex-flow : row wrap;
+}
+
+.search_part{
+	border : 1px solid black;
+	width : 33%;
+	width : calc(100%/3);
+	padding : 0.5em;
+}
+
+.search_pedido_form{
+	display : flex;
+}
+
+.search_label {
+	
+}
+
+.search_div {
+	size : auto;
+	margin : auto auto;
+	display : flex;
 }
