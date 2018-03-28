@@ -4,6 +4,7 @@
 	<title> Página Inicial </title>
 </head>
 <body>
+	
 	<div class="oa_menu">
 		<header>
 			
@@ -12,17 +13,27 @@
 			</div>
 			
 			<div class="oam_wrapper">
-				<div class="opt opt_produto">
+				<div class="oam_opt opt_produto oam_dropdown">
+					<a href="#"><div class="oam_drop_div"></div></a>
+					<div class="oam_dropdown_content">
+						<a href="#" target="main_frame"><div class="oam_drop_opt">frame</div></a>
+						<a href="#" target="main_frame"><div class="oam_drop_opt">TESTE</div></a>
+					</div>
 				</div>
 				
-				<div class="opt opt_cliente">
+				<div class="oam_opt opt_cliente oam_dropdown">
+					<a href="#"><div class="oam_drop_div"></div></a>
+					<div class="oam_dropdown_content">
+						<a href="#" target="main_frame"><div class="oam_drop_opt">TESTE</div></a>
+						<a href="#" target="main_frame"><div class="oam_drop_opt">TESTE</div></a>
+					</div>
 				</div>
 				
-				<div class="opt">
+				<div class="oam_opt">
 					IMG_VENDAS
 				</div>
 				
-				<div class="opt">
+				<div class="oam_opt">
 					IMG_OUTROS
 				</div>
 			</div>
@@ -37,7 +48,10 @@
 						
 						<div class="search_div">
 							<label class="search_label" for="search_sit_pedido">Situação do Pedido:</label><br/>
-							<input class="search_input" type="text" name="search_sit_pedido" placeholder="..." id="search_sit_pedido"/>
+							<select class="search_input" type="text" name="search_sit_pedido" id="search_sit_pedido">
+								<option class="search_sel_opt" value="Concluido" selected> Concluido </option>
+								<option class="search_sel_opt" value="Indiferente"> Indiferente </option>
+							</select>
 						</div>
 						
 						<div class="search_button_div">
@@ -58,8 +72,9 @@
 		</header>
 	</div>
 
+	<iframe src="teste_1.html" name="main_frame"></iframe>
 <footer>
-	endorama fábrica de essências
+	Sistema Administrativo Endorama - Fabricação de fumos para narguilé e vaporizadores
 </footer>
 </body>
 </html>

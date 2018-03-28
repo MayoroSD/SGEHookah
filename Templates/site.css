@@ -2,26 +2,64 @@
 
 * {
 	box-sizing : border-box;
+	font-family: Georgia, serif
+}
+
+iframe{
+	width: 100%;
+	height: 100%;
+	margin: 5px auto;
+	border: 1px solid gray;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
 }
 
 body {
 	margin : 5px;
-	padding-bottom : 15px;
+	margin-bottom: 0;
+	padding-bottom : 0px;
+	background-color : black;
 }
 
 footer {
-	border-top : 1px solid black;
-	position : fixed;
 	text-align : center;
 	bottom : 0;
 	left : 0;
 	right: 0;
 	width : 100%;
+	margin: 0px auto;
+	background-color: #fffec4;
+	border-top: 1px solid #4f4d00;
 }
+
+/* Dropdown */
+
+.oam_dropdown_content {
+	display: none;
+	position: absolute;
+	border: 1px solid black;
+	width: 120%;
+}
+
+.oam_drop_div {
+	width: 100%;
+	height: 100%;
+	cursor: default;
+}
+
+.oam_opt:hover .oam_dropdown_content{
+	display: block;
+	background-color: lightgray;
+}
+
+.oam_dropdown{
+	position: relative;
+	display: inline-block;
+}
+
 /* Classes */
 
 .oa_menu {
-	border : 1px solid black;
 	height : auto;
 }
 
@@ -41,19 +79,19 @@ footer {
 	justify-content : space-around;
 	flex-flow : row no-wrap;
 	padding : 10px;
-	background-color : lightgray;
+	background-color : #2d2d2d;
 }
 
-.opt {
+.oam_opt {
 	margin: auto auto;
-	width : 150px;
-	height : 15%;
+	width : 8%;
+	height : 12.5%;
 	background-color : lightgray;
     border-radius: 10px;
     border: 1px solid gray;
 }
 
-.opt:hover{
+.oam_opt:hover{
     background-color: lightyellow;
 }
 
@@ -71,13 +109,13 @@ footer {
     background-repeat: no-repeat;
 }
 
-
 .search_wrapper{
-	border : 1px solid black;
 	height : 50px;
 	margin : 0px auto 5px;
 	display : flex;
 	flex-flow : row wrap;
+	background-color : lightgray;
+	border-radius: 15px;
 }
 
 .search_part{
@@ -111,6 +149,10 @@ footer {
     border: 1px solid black;
     padding: 4px;
     font-size: 80%;
+}
+
+.search_sel_opt{
+	
 }
 
 .search_button_div{
