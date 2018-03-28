@@ -26,17 +26,17 @@ footer {
 }
 
 .oam_brand {
-	margin : 5px auto;
+	margin : 0px auto 5px;
 	border : 1px solid black;
 	width : 300px;
-	height : 50px;
+	height : 40px;
 	background-color : yellow;
 }
 
 .oam_wrapper {
 	border : 1px solid black;
 	height : auto;
-	margin : 5px;
+	margin : 0px auto 5px;
 	display : flex;
 	justify-content : space-around;
 	flex-flow : row no-wrap;
@@ -46,16 +46,36 @@ footer {
 
 .opt {
 	margin: auto auto;
-	border : 1px solid black;
-	width : 250px;
-	height : 150px;
-	background-color : white;
+	width : 150px;
+	height : 15%;
+	background-color : lightgray;
+    border-radius: 10px;
+    border: 1px solid gray;
 }
+
+.opt:hover{
+    background-color: lightyellow;
+}
+
+.opt_produto{
+    background-image: url("produtos.png");
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
+.opt_cliente{
+    background-image: url("cliente.png");
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
 
 .search_wrapper{
 	border : 1px solid black;
-	height : 40px;
-	margin : 5px;
+	height : 50px;
+	margin : 0px auto 5px;
 	display : flex;
 	flex-flow : row wrap;
 }
@@ -64,7 +84,11 @@ footer {
 	border : 1px solid black;
 	width : 33%;
 	width : calc(100%/3);
-	padding : 0.5em;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    vertical-align: center;
+    line-height: 15px;
 }
 
 .search_pedido_form{
@@ -72,11 +96,43 @@ footer {
 }
 
 .search_label {
-	
+	font-size: 70%;
 }
 
 .search_div {
-	size : auto;
-	margin : auto auto;
-	display : flex;
+	margin : auto 5px;
+    width: 100%;
+}
+
+.search_input{
+    width: 100%;
+    height: 18px;
+    border-radius: 3px;
+    border: 1px solid black;
+    padding: 4px;
+    font-size: 80%;
+}
+
+.search_button_div{
+    vertical-align: middle;
+    height: auto;
+    width: 35px;
+    height: 35px;
+}
+
+.search_button{
+    background-image: url("lupinha.png");
+    background-size: contain;
+    background-position: center;
+    width: 35px;
+    height: 35px;
+    transition-duration: 0.4s;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.search_button:hover{
+    background-color: yellow;
+    color: black;
 }
